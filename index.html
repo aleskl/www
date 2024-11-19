@@ -10,16 +10,26 @@
             font-family: Arial, sans-serif;
             background: #ced0cf;
         }
+        .title {
+            position: absolute; /* or absolute */
+            top: 39%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            opacity: 0.3;
+        }
+        .hidden {
+            display: none;
+        }
     </style>
 </head>
 <body>
-    <h1>kladnik.cc</h1>
+    <h1 class="title">kladnik.cc</h1>
     <img src="ai-kladnik.jpg" alt="kladnik.cc" usemap="#image-map">
     <map name="image-map">
         <area target="" alt="Lenart" title="Lenart" href="https://lenart.kladnik.cc/" coords="572,781,449,596" shape="rect">
         <area target="" alt="Aleš" title="Aleš" href="https://ales.kladnik.cc/" coords="626,151,747,314" shape="rect">
     </map>
-    <p><a href="https://ales.kladnik.cc/">Aleš Kladnik</a></p>
-    <p><a href="https://lenart.kladnik.cc/">Lenart Kladnik</a></p>
+    <p class="hidden"><a href="https://ales.kladnik.cc/">Aleš Kladnik</a></p>
+    <p class="hidden"><a href="https://lenart.kladnik.cc/">Lenart Kladnik</a></p>
 </body>
 </html>
